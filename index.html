@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EngAgency — Growing change with care</title>
+<style>
+  :root { --ink:#3a2e28; --paper:#f5f0e8; --terra:#b06a4a; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; }
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    background:var(--paper); color:var(--ink);
+    display:flex; flex-direction:column; min-height:100%;
+  }
+  header { text-align:center; padding:28px 20px 14px; }
+  header h1 { margin:0; font-size:1.5rem; letter-spacing:.01em; }
+  header p { margin:6px 0 0; color:var(--terra); font-size:.95rem; }
+  .actions { text-align:center; padding:0 20px 16px; }
+  .btn {
+    display:inline-block; margin:6px; padding:12px 22px; border-radius:8px;
+    background:var(--ink); color:var(--paper); text-decoration:none; font-weight:600;
+  }
+  .btn.alt { background:transparent; color:var(--ink); border:1.5px solid var(--ink); }
+  .viewer { flex:1 1 auto; border:0; width:100%; min-height:70vh; }
+  footer { text-align:center; font-size:.8rem; color:#7a6c62; padding:14px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>EngAgency</h1>
+    <p>Growing change with care · Windesheim</p>
+  </header>
+  <div class="actions">
+    <a class="btn" href="lookbook.pdf">Lookbook openen</a>
+    <a class="btn alt" href="lookbook.pdf" download>Downloaden (PDF)</a>
+  </div>
+  <iframe class="viewer" src="lookbook.pdf#view=FitH" title="EngAgency lookbook"></iframe>
+  <footer>Essays van Windesheim-studenten · 4 juni 2026</footer>
+</body>
+</html>
